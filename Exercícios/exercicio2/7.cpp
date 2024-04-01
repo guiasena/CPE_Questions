@@ -2,7 +2,7 @@
 using namespace std;
 
 bool EhPrimo(int num) {
-	// Guilherme Araujo Sena || 241008602 || Turma 01
+// Guilherme Araujo Sena || 241008602 || Turma 01
     if (num <= 1)
         return false;
 
@@ -16,10 +16,10 @@ bool EhPrimo(int num) {
 
 int main() {
     int numero;
-    cout << "Digite um número: ";
+    cout << "Digite um nÃºmero: ";
     cin >> numero;
 
-    cout << (EhPrimo(numero) ? "É primo." : "Não é primo.") << endl;
+    cout << (EhPrimo(numero) ? "Ã‰ primo." : "NÃ£o Ã© primo.") << endl;
 
     return 0;
 }
