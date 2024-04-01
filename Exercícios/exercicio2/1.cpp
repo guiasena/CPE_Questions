@@ -6,9 +6,9 @@ int main() {
     float y = 2 % 2 + 2 * 2 / 1;
     float z = {3 * 9 * (3 + (9 * 3 / 3))};
     
-    cout << "O valor de X é: " << x << endl;
-    cout << "O valor de Y é: " << y << endl;
-    cout << "O valor de Z é: " << z << endl;
+    cout << "O valor de X eh: " << x << endl;
+    cout << "O valor de Y eh: " << y << endl;
+    cout << "O valor de Z eh: " << z << endl;
 
     return 0;
 }
