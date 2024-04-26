@@ -1,11 +1,19 @@
 #include<iostream>
 using namespace std;
 
-int fatorial(double n) {
-    return (n == 1 || n == 0) ? 1 : n * fatorial(n - 1);
-}
-int main() {
-	double constanteMatematica;
-	constanteMatematica = 1 + (1/fatorial(1)) + (1/fatorial(2)) + (1/fatorial(3)) + (1/fatorial(4)) + (1/fatorial(5)) + (1/fatorial(6)) + (1/fatorial(7)) + (1/fatorial(8)) + (1/fatorial(9)) + (1/fatorial(10));
-	cout << "O valor da constante matematica eh: " << constanteMatematica;
+int main (){
+	float ex;
+	int x, fatorial, potencia;
+	ex = 1;
+	fatorial = 1;
+	potencia = 1;
+	cout << "Digite o valor de x: ";
+	cin >> x;
+	for (int i = 1; i <= 10; i++) {
+		fatorial *= i;
+		potencia *= x;
+		ex += ((float) potencia / (float) fatorial);
+	}
+	cout << "O valor da constante matematica eh: " << ex;
+	return 0;
 }
