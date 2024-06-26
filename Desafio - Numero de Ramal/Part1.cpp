@@ -91,7 +91,6 @@ void exibirTodosRamais(const vector<Ramal> &listaRamais) {
 int main() {
     vector<Ramal> listaRamais;
     
-    cout << "===== Cadastro de Ramal =====\n";
     cadastro(listaRamais);
     
     exibirTodosRamais(listaRamais);
