@@ -4,7 +4,6 @@
 #include <vector>
 #include <string>
 #include <iomanip>
-
 using namespace std;
 
 void cadastrarAluno() {
@@ -36,7 +35,7 @@ void adicionarNota() {
 
     ifstream arquivoEntrada(nomeAluno + ".txt");
     if (!arquivoEntrada) {
-        cerr << "Aluno nÃ£o cadastrado!" << endl;
+        cerr << "Aluno nao cadastrado!" << endl;
         return;
     }
 
@@ -56,7 +55,7 @@ void calcularMedia() {
 
     ifstream arquivo(nomeAluno + ".txt");
     if (!arquivo) {
-        cerr << "Aluno nÃ£o cadastrado!" << endl;
+        cerr << "Aluno nao cadastrado!" << endl;
         return;
     }
 
@@ -66,7 +65,7 @@ void calcularMedia() {
     while (getline(arquivo, linha)) {
         if (primeiraLinha) {
             primeiraLinha = false;
-            continue; // Ignorar a linha de matrÃ­cula
+            continue;
         }
         double nota;
         stringstream ss(linha);
@@ -84,7 +83,7 @@ void calcularMedia() {
         soma += n;
     }
     double media = soma / notas.size();
-    cout << "MÃ©dia do aluno " << nomeAluno << " Ã©: " << fixed << setprecision(2) << media << endl;
+    cout << "Media do aluno " << nomeAluno << " eh: " << fixed << setprecision(2) << media << endl;
 }
 
 int main() {
@@ -113,7 +112,7 @@ int main() {
                 cout << "Encerrando o programa..." << endl;
                 return 0;
             default:
-                cerr << "OpÃ§Ã£o invÃ¡lida! Tente novamente." << endl;
+                cerr << "Opcao invalida! Tente novamente." << endl;
         }
     }
 
